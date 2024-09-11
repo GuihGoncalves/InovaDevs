@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffc8dd;
+}
+
+/* header */
+header {
+    background-color: #cdb4db;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-header-inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #ffc8dd;
+    font-size: 50px;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+}
+
+.menu-desktop {
+    background-color: #ffc8dd;
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+    width: 100%; 
+    margin: 0; 
+    padding: 30px 0; 
+}
+
+.menu-desktop li {
+    text-align: center;
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    color: #cdb4db;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.search input {
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+.search button {
+    background-color: #5bb4c800;
+    border: none;
+    padding: 5px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+/*
+.profile button {
+    background-color: #4d4d4d00;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+}
+*/
+.profile {
+    border: #000000;
+    border-radius: 100%;
+    border-color: #000000;
+    margin: 7px 20px;
+}
+
+.profile a {
+    background-color: #cdb4db;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+}
+
+.perfil {
+    background-color: #00000000;    
+    border-radius: 100%;
+    border-color: #000000;
+    width: 70px;
+    height: 70px;
+    padding: 4px;
+}
+
+.perfilImg {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+/* main */
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./imagens/bolos.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: #000000;
+    text-align: center;
+    position: relative;
+}
+
+.promo h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 450px;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.promo-text {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 50px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.promo h3 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.produto-img {
+    width: 230px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+/* abas */
+.h1-abas {
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+/* footer */
+.footer {
+    color: #ffffff;
+    background-color: #000000;
+    bottom: 0px;
+    position: fixed;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 3vh;
+}
+
+
+@media screen and (max-width: 1020px) {
+    * {
+        flex-direction: column;
+    }
+    
+    /*header*/
+    .menu-desktop {
+        display: none;
+        
+    }
+}
