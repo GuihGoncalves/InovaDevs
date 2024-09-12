@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esme Sweet Cake</title>
-</head>
-<body>
-    <img src="assets/img/Logo.jpeg"></img>
-    <nav>
-        <a href="">HOME</a>
-        <a href="">SOBRE</a>
-        <a href="">PRODUTOS</a>
-        <a href="">FAQ</a>
-        <a href="">RESERVAS</a>
-    </nav>
-    <h1>Esme Sweet Cake</h1>
-    <h2>Doces e Salgados para você!</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" href="./imagens/Logo.jpeg" type="image/x-icon">
+        <title>Esme Sweet Cake</title>
+    </head>
+    <body>
+        <!-- Sobre -->
+        <header id="home" class="header">
+            <div class="top-header">
+                <div class="logo">
+                    <h1>Esme Sweet Cake</h1>
+                </div>
+                <div class="top-header-inside">
+
+                    <div class="search">
+                        <input type="text" placeholder="Pesquisar..." maxlength="30">
+                        <button onclick="alert('Pesquisa')">&#128269;</button>
+                    </div>
+                    <a  class="profile" href="./login/login.html">
+                        <img class="perfilImg" src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png">
+                    </a>
+                </div>
+            </div>    
+        </header>
+        <nav>
+            <ul class="menu-desktop">
+                <li><a href="#">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="promo">       
+                <h2>Desconto na sua primeira compra</h2>
+                <div class="promo-text">
+                    <p>Promoção</p>
+                    <h3>30% OFF</h3>
+                </div>
+            </section>
+
+            
+            <!-- Produtos -->
+            <h1 class="h1-abas">Produtos</h1>
+            <section id="produtos" class="produtos">
+                    <img class="produto-img" src="./imagens/bolo1.jpeg" alt="001">
+                    <img class="produto-img" src="./imagens/bolo2.jpeg" alt="002">
+                    <img class="produto-img" src="./imagens/bolo3.jpeg" alt="003">
+                    <img class="produto-img" src="./imagens/bolo4.jpeg" alt="004">
+                    <img class="produto-img" src="./imagens/bolo5.jpeg" alt="005">
+            </section>
+
+            <!-- Reservas -->
+            <h1 class="h1-abas">Reservas</h1>
+            <section id="reservas" class="reservas">
+            </section>
+            
+            <!-- FAQ -->
+            <h1 class="h1-abas">FAQ</h1>
+            <section id="faq" class="faq">
+            </section>
+
+            <!-- Sobre -->
+            <h1 class="h1-abas">Sobre</h1>
+            <section id="sobre" class="sobre">
+            </section>
+        </main>
+        <footer class="footer">Desenvolvido por InovaDevs</footer>
+    </body>
     <!--        NOMES E RA's DO GRUPO
         Guilherme da Silva Gonçalves - 202202140465
         Giovanna Graço Soprano - 202403015951
@@ -23,6 +79,4 @@
         Otávio de Oliveira - 202212039589
         Matheus dos Santos - 202403829533
     -->
-    <center> <p><a href="/InovaDevs/Login/login">Faça seu cadastro aqui!</a></p> </center>
-</body>
 </html>
