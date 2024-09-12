@@ -16,7 +16,6 @@ O projeto se concentra em um site para confeitaria que visa criar uma plataforma
 
 * **Giovanna Soprano** - *gracogi* 
 * **Leandro de Oliveira** - *leandro-schiavo*
-* **Ana Sanchez** - *aninhasanchez*
 * **Otávio de Oliveira** - *otavio-art*
 * **Matheus dos Santos** - *kyureP*
 * **Guilherme Gonçalves** - *guihGoncalves*
