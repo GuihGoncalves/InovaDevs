@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #ff6b6b; 
+    --secondary-color: #ffe66d; 
+    --background-color: #f7fff7; 
+    --text-color: #333;
+    --button-hover: #ff4e4e; 
+    --button-text-color: #fff; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,188 +15,156 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffc8dd;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* header */
 header {
-    background-color: #cdb4db;
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: var(--button-text-color);
+    text-align: center;
 }
 
-.top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header .logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
 }
+
+.perfilImg {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    margin-right: 15px; 
+    border: 2px solid var(--secondary-color);
+}
+
 .top-header-inside {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo h1 {
-    color: #ffc8dd;
-    font-size: 50px;
-    text-align: center;
-    padding: 5px 20px 5px 20px;
-}
-
-.menu-desktop {
-    background-color: #ffc8dd;
-    list-style: none;
-    display: flex;
-    justify-content: space-around; 
-    width: 100%; 
-    margin: 0; 
-    padding: 30px 0; 
-}
-
-.menu-desktop li {
-    text-align: center;
-}
-
-.menu-desktop a {
-    text-decoration: none;
-    color: #cdb4db;
-    font-size: 30px;
-    font-weight: bold;
-}
-
 .search {
     display: flex;
     align-items: center;
-    width: 300px;
 }
 
 .search input {
-    padding: 7px;
+    padding: 5px 10px;
     border: none;
-    border-radius: 5px;
-    width: 100%; 
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .search button {
-    background-color: #5bb4c800;
+    background-color: var(--secondary-color);
     border: none;
-    padding: 5px;
-    margin-left: -30px;
+    padding: 8px 12px;
+    border-radius: 4px;
     cursor: pointer;
-}
-/*
-.profile button {
-    background-color: #4d4d4d00;
-    border-radius: 100%;
-    padding: 5px;
-    cursor: pointer;
-    font-size: 30px;
-    text-align: center;
-}
-*/
-.profile {
-    border: #000000;
-    border-radius: 100%;
-    border-color: #000000;
-    margin: 7px 20px;
+    transition: background-color 0.3s ease;
 }
 
-.profile a {
-    background-color: #cdb4db;
-    border-radius: 100%;
-    padding: 5px;
-    cursor: pointer;
-    font-size: 30px;
+.search button:hover {
+    background-color: var(--button-hover);
+}
+
+
+header .logo h1 {
+    display: none;
+}
+
+
+nav {
+    margin: 20px 0;
     text-align: center;
 }
 
-.perfil {
-    background-color: #00000000;    
-    border-radius: 100%;
-    border-color: #000000;
-    width: 70px;
-    height: 70px;
-    padding: 4px;
-}
-
-.perfilImg {
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-}
-
-/* main */
-.promo {
+.menu-desktop {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-image: url('./imagens/bolos.png');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    color: #000000;
-    text-align: center;
-    position: relative;
+    gap: 15px;
 }
 
-.promo h2 {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 450px;
-    margin: 20px;
-    font-size: 40px;
+.menu-desktop .btn {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.promo-text {
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 50px;
-    width: 200px;
-    font-weight: bold;
+.menu-desktop .btn:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-5px);
 }
 
-.promo h3 {
-    font-size: 70px;
-    font-weight: bold;
-}
 
 .produtos {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .produto-img {
-    width: 230px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
-/* abas */
+.promo {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.promo-text h3 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+
 .h1-abas {
+    font-size: 2rem;
+    margin: 30px 0;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+.footer {
     text-align: center;
     padding: 10px;
-    margin: 30px;
-}
-
-/* footer */
-.footer {
-    color: #ffffff;
-    background-color: #000000;
-    bottom: 0px;
-    position: fixed;
-    justify-content: space-around;
-    display: flex;
-    width: 100%;
-    height: 3vh;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
 }
 
 
-@media screen and (max-width: 1020px) {
-    * {
-        flex-direction: column;
-    }
-    
-    /*header*/
-    .menu-desktop {
-        display: none;
-        
-    }
+button, a {
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+a:active, button:active {
+    transform: scale(0.95);
 }
