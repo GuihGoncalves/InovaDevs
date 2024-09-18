@@ -24,22 +24,41 @@ header {
 }
 
 header .logo h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
     display: block;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.logoImg {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
 }
 
 .perfilImg {
     width: 50px; 
     height: 50px; 
     border-radius: 50%; 
-    border: 2.5px solid var(--text-color);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .top-header-inside {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.profile {
+    border-right: 0%;
 }
 
 .search input {
