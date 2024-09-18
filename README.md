@@ -20,6 +20,8 @@ O projeto se concentra em um site para confeitaria que visa criar uma plataforma
 * **Matheus dos Santos** - *kyureP*
 * **Guilherme Gonçalves** - *guihGoncalves*
 
+## Site
+<https://guihgoncalves.github.io/InovaDevs/>
 
 ## 🎁 Expressões de gratidão
 
