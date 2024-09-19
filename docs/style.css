@@ -18,25 +18,21 @@ body {
 
 header {
     background-color: var(--primary-color);
-    padding: 30px;
+    padding: 15px;
     color: var(--button-text-color);
     text-align: center;
 }
 
-header .logo h1 {
-    font-size: 4rem;
-    margin: 0;
-    display: block;
-}
-
-.logo {
-    font-size: 20px;
+.logo h1 {
+    font-size: 4.5rem;
+    margin-left: 25vh;
 }
 
 .logoImg {
-    width: 150px; 
-    height: 150px;
+    width: 180px; 
+    height: 180px;
     border-radius: 50%; 
+    margin-left: 5vh;
 }
 
 .perfilImg {
@@ -49,16 +45,19 @@ header .logo h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 20vh;
 }
 
 .top-header-inside {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: left;
+    margin-top: 20vh;
 }
 
 .profile {
     border-right: 0%;
+    margin-bottom: 15vh;
+    display: block;
 }
 
 .search input {
@@ -66,7 +65,6 @@ header .logo h1 {
     border: none;
     border-radius: 4px;
     font-size: 1rem;
-    margin-right: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -196,18 +194,20 @@ a:active, button:active {
     color: #fff;
     background-image: url(./assets/img/reserva.jpg);
     padding: 10px 20px;
-    display: inline-block;
+    display: block;
     background-repeat: repeat;
-    margin: 0%;
-    width: 51vw;
+    width: 75vh;
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
 }
 
 .textoReserva{
     letter-spacing: normal;
     color: #000;
     margin: 0%;
+    font-size: 20px;
+    font-style: bold;
 }
 
 .textoReserva small {
@@ -215,13 +215,15 @@ a:active, button:active {
 }
 
 .textoReserva p {
-    font-size: 15px;
+    font-size: 20px;
+    font-style: bold;
 }
 
 .textoReserva h1 {
     font-size: 50px;
     box-sizing: inherit;
     margin: 0%;
+    font-style: bold;
 }
 
 .reservas button {
@@ -229,11 +231,13 @@ a:active, button:active {
     width: 150px;
     height: 40px;
     left: 10px;
-    margin-left: 15vh;
+    margin-left: 7vh;
     background-color: #ff5858;
     border: none;
     border-radius: 5px;
     font-family: "Georgia", serif;
+    font-weight: bold;
+    color: #fff;
 }
 
 .row-cols-1 {
