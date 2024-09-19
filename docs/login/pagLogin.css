@@ -25,9 +25,12 @@ body {
 /* Estilo do main */
 .main {
     max-width: 600px;
-    max-height: 400px;
+    max-height: 650px;
     margin: 0 auto;
-    padding: 110px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-bottom: 100px;
+    padding-right: 60px;
     background-color: #edf0f0;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -112,11 +115,3 @@ body {
     height: 40px;
 }
 
-/* Estilo do footer */
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ff7d7d;
-    color: #fff;
-    
-}
