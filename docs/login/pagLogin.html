@@ -18,24 +18,24 @@
         </header>
         <main class="main">
             <pre>
-                <h1>Insira os Dados abaixo:</h1>
-                <form>
-                    <label for="Nome">Nome:</label>
+                <h1>Insira os Dados Abaixo:</h1>
+                <form action="https://api.sheetmonkey.io/form/qpsJYFRqfHwBSZEzkxTA5a" method="post">
+                    <label id="nome" for="nome">Nome:</label>
                     <input type="text" name="Nome" placeholder="Insira seu Nome" required >
                     <br>
-            <label for="CPF">CPF:</label>
+                    <label id="cpf" for="cpf">CPF:</label>
                     <input type="text" name="CPF" placeholder="Insira seu CPF" required >
                     <br>
-                    <label for="Celular">Celular:</label>
-                    <input type="text" name="Celular" placeholder="Insira seu Celular com DDD" required >
+                    <label id="celular" for="celular">Celular:</label>
+                    <input type="tel" name="Celular" placeholder="Insira seu Celular com DDD" required >
                     <br>
-                    <label for="Email">E-mail:</label>
-                    <input type="text" name="Email" placeholder="Insira seu Email" required >
+                    <label id="email" for="email">E-mail:</label>
+                    <input type="email" name="E-mail" placeholder="Insira seu Email" required >
                     <br>
-                    <label for="Senha">Senha:</label>
+                    <label id="senha" for="senha">Senha:</label>
                     <input type="password" name="Senha" placeholder="Insira sua Senha" required >
                     <br>
-                    <input type="submit" value="Enviar">
+                    <button type="submit" class="btn2"><p class="txtB">Enviar</p></button>
                 </form>
              <div class="button-container">
                  
@@ -44,9 +44,9 @@
                 <button type="button" class="btn"><p><a href="../index.html"><img src="../assets/img/home.png" alt="home" class="btn-img"/></a></p></button>
              </div>
              
-            <center><p style="color: black;">Desenvolvido por InovaDevs</p></center>
+            <!--<center><p style="color: black;">Desenvolvido por InovaDevs</p>                   </center>-->
             </pre>
         </main>
-        
+         <footer class="footer">Desenvolvido por InovaDevs</footer>
     </body>
 </html>

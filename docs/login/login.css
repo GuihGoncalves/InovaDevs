@@ -28,6 +28,7 @@ body {
     max-height: 400px;
     margin: 0 auto;
     padding: 110px;
+    padding-top: 30px;
     background-color: #edf0f0;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -58,7 +59,7 @@ body {
     text-align: left; /* Alinha o texto à esquerda */
 }
 
-.main input[type="text"],
+.main input[type="email"],
 .main input[type="password"] {
     padding: 10px;
     border: 1px solid #ccc;
@@ -95,6 +96,21 @@ body {
 .btn-img {
     width: 35px; /* Ajuste o tamanho conforme necessário */
     height: 35px;
+}
+
+.btn2{
+    width: 20vh; 
+    height: 40px;
+    border: solid;
+    border-radius: 5px;
+    background-color: #000 ;
+    cursor: pointer;
+}
+
+.txtB{
+    color: #fff;
+    font-size: 1.3em;
+    margin: 0;
 }
 
 /* Estilo do footer */
