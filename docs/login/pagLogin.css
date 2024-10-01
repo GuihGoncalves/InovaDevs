@@ -9,17 +9,17 @@ body {
     height: 100vh;
 }
 
-/*Estilo do header*/
+/* Estilo do header */
 .header {
     background-color: #ff7d7d;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
 .header .logo h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 0.8em;
 }
 
 /* Estilo do main */
@@ -27,16 +27,13 @@ body {
     max-width: 600px;
     max-height: 650px;
     margin: 0 auto;
-    padding-top: 10px;
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 100px;
+    padding: 10px 60px 100px;
     background-color: #edf0f0;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center;     /* Centraliza horizontalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 .main h1 {
@@ -57,11 +54,10 @@ body {
     font-weight: bold;
     color: #000;
     font-size: 1rem;
-    width: 92%; /* Alinhar com o input */
-    text-align: left; /* Alinha o texto à esquerda */
+    width: 92%;
+    text-align: left;
 }
 
-.main input[type="text"],
 .main input[type="text"],
 .main input[type="tel"],
 .main input[type="email"],
@@ -75,8 +71,8 @@ body {
 /* Estilo dos botões */
 .button-container {
     display: flex;
-    justify-content: center; /* Centraliza os botões */
-    gap: 20px; /* Espaçamento entre as imagens */
+    justify-content: center;
+    gap: 20px;
     position: relative;
 }
 
@@ -95,20 +91,20 @@ body {
 }
 
 .btn-img {
-    width: 40px; /* Ajuste o tamanho conforme necessário */
+    width: 40px;
     height: 40px;
 }
 
-.btn2{
-    width: 35vh; 
+.btn2 {
+    width: 35vh;
     height: 40px;
     border: solid;
     border-radius: 5px;
-    background-color: #000 ;
+    background-color: #000;
     cursor: pointer;
 }
 
-.txtB{
+.txtB {
     color: #fff;
     font-size: 1.3em;
     margin: 0;
@@ -123,4 +119,94 @@ body {
     margin-top: 6vh;
 }
 
-    
+/* Media queries para telas menores */
+@media screen and (max-width: 600px) {
+    .header .logo h1 {
+        font-size: 1em;
+    }
+
+    .main {
+        max-width: 90%;
+        padding: 5px 60px 20px;
+        margin-top: 20px;
+    }
+
+    .main h1 {
+        font-size: 1.2em;
+    }
+
+    .main label {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .main input[type="text"],
+    .main input[type="tel"],
+    .main input[type="email"],
+    .main input[type="password"] {
+        padding: 6px;
+        width: 95%;
+    }
+
+    .btn-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn2 {
+        width: 80%;
+        max-width: 200px;
+        height: 35px;
+    }
+
+    .txtB {
+        font-size: 1em;
+    }
+
+    .footer {
+        padding: 10px 0;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header .logo h1 {
+        font-size: 1em;
+    }
+
+    .main {
+        padding: 10px 30px 30px;
+    }
+
+    .main h1 {
+        font-size: 1em;
+    }
+
+    .main label {
+        font-size: 0.7rem;
+    }
+
+    .main input[type="text"],
+    .main input[type="tel"],
+    .main input[type="email"],
+    .main input[type="password"] {
+        padding: 5px;
+    }
+
+    .btn-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .btn2 {
+        height: 30px;
+    }
+
+    .txtB {
+        font-size: 0.9em;
+    }
+
+    .footer {
+        font-size: 0.7em;
+    }
+}
