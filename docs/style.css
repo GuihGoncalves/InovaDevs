@@ -353,6 +353,11 @@ nav {
         font-size: 1rem;
     }
 
+    .adicionarProduto {
+        left: 75%;
+        transform: translateX(-75%);
+    }
+
     .produtos {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
