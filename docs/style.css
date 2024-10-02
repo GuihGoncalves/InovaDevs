@@ -353,28 +353,6 @@ nav {
         font-size: 1rem;
     }
 
-    .adicionarProduto {
-        position: relative;
-        left: 1000px;
-        bottom: 90px;
-    }
-
-    .adicionarProduto .btn {
-        right: 100%;
-        text-decoration: none;
-        background-color: var(--button-hover);
-        color: var(--button-text-color);
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        border: none;
-        cursor: pointer;
-    }
-
-    .adicionarProduto .btn:hover {
-        transform: translateY(-5px);
-    }
-
     .produtos {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
