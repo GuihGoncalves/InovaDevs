@@ -16,7 +16,7 @@ body {
     margin: 0;
 }
 
-
+/* Header */
 header {
     background-color: var(--primary-color);
     padding: 10px;
@@ -89,6 +89,7 @@ header {
     margin-left: -1px;
 }
 
+/* Navigation */
 nav {
     margin: 20px 0;
     text-align: center;
@@ -121,16 +122,18 @@ nav {
 
 .adicionarProduto {
     position: relative;
-    left: 1000px;
-    bottom: 90px;
+    bottom: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .adicionarProduto .btn {
-    right: 100%;
+    right: 0;
     text-decoration: none;
     background-color: var(--button-hover);
     color: var(--button-text-color);
-    padding: 10px 20px;
+    padding: 4px 8px;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     border: none;
@@ -141,6 +144,7 @@ nav {
     transform: translateY(-5px);
 }
 
+/* Promo Section */
 .promo {
     text-align: center;
     background-color: var(--secondary-color);
@@ -161,6 +165,7 @@ nav {
     color: var(--button-hover);
 }
 
+/* Cards */
 .row-cols-1 {
     display: grid;
     gap: 20px;
@@ -205,6 +210,8 @@ nav {
     padding: 5px;
 }
 
+
+/* Reservations */
 .reservas {
     color: #000;
     background-image: url(./assets/img/reserva.jpg);
@@ -235,6 +242,7 @@ nav {
     cursor: pointer;
 }
 
+/* FAQ Section */
 .faq {
     margin-bottom: 15px;
     border: 2px solid #ff5858;
@@ -249,6 +257,7 @@ nav {
     font-size: 1.2em;
 }
 
+/* About Section */
 .sobre {
     background-color: var(--secondary-color);
     padding: 20px;
@@ -270,6 +279,7 @@ nav {
     margin-bottom: 15px;
 }
 
+/* Footer */
 .footer {
     text-align: center;
     padding: 10px;
@@ -278,6 +288,7 @@ nav {
     color: var(--button-text-color);
 }
 
+/* Media queries para telas maiores */
 @media (min-width: 768px) {
     body {
         padding: 20px;
@@ -340,6 +351,28 @@ nav {
         flex: 0 1 auto; /* Volta ao tamanho automático para telas maiores */
         padding: 10px 20px;
         font-size: 1rem;
+    }
+
+    .adicionarProduto {
+        position: relative;
+        left: 1000px;
+        bottom: 90px;
+    }
+
+    .adicionarProduto .btn {
+        right: 100%;
+        text-decoration: none;
+        background-color: var(--button-hover);
+        color: var(--button-text-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    .adicionarProduto .btn:hover {
+        transform: translateY(-5px);
     }
 
     .produtos {
