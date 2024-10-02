@@ -147,8 +147,8 @@ body {
         font-size: 0.8rem;
     }
 
-    .main input[type="email"],
-    .main input[type="password"],
+    .main input[type="text"],
+    .main input[type="text"],
     .main input[type="submit"] {
         font-size: 0.9em;
     }
