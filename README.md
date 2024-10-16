@@ -27,5 +27,7 @@ O projeto se concentra em um site para confeitaria que visa criar uma plataforma
 
 * Gostaríamos de expressar nosso sincero agradecimento pelo projeto e esperamos poder contar com sua colaboração para continuarmos a construir juntos.
 
+## 🎨 Design do Projeto
+
 ---
 ⌨️ com ❤️ por Inova Dev's 😊
