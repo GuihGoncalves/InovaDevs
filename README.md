@@ -29,7 +29,7 @@ O projeto se concentra em um site para confeitaria que visa criar uma plataforma
 
 ## 🎨 Design do Projeto
 
-LOGO:![Logo](https://github.com/user-attachments/assets/d188d329-720c-462c-ad09-bd288f6df39d)
+LOGO: ![Logo](https://github.com/user-attachments/assets/d188d329-720c-462c-ad09-bd288f6df39d)
 
 
 TELA CADASTRO: ![Tela CADASTRO](https://github.com/user-attachments/assets/95125408-3540-4f2e-a024-ac5ad8bc2354)
