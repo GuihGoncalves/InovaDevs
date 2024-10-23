@@ -58,10 +58,10 @@ body {
     text-align: left;
 }
 
-.main input[type="text"],
-.main input[type="tel"],
-.main input[type="email"],
-.main input[type="password"] {
+ .main input[type="text"],
+    .main input[type="number"],
+    .main input[type="date"],
+    .main input[type="time"] {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -142,9 +142,9 @@ body {
     }
 
     .main input[type="text"],
-    .main input[type="tel"],
-    .main input[type="email"],
-    .main input[type="password"] {
+    .main input[type="number"],
+    .main input[type="date"],
+    .main input[type="time"] {
         padding: 6px;
         width: 95%;
     }
@@ -187,10 +187,10 @@ body {
         font-size: 0.7rem;
     }
 
-    .main input[type="text"],
-    .main input[type="tel"],
-    .main input[type="email"],
-    .main input[type="password"] {
+     .main input[type="text"],
+    .main input[type="number"],
+    .main input[type="date"],
+    .main input[type="time"] {
         padding: 5px;
     }
 
