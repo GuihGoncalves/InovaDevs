@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pagLogin.css">
+        <link rel="shortcut icon" href="../imagens/Logo.jpeg" type="image/x-icon">
+        <title>Esme Sweet Cake</title>
+    </head>
+    <body>
+        <!-- Sobre -->
+        <header id="home" class="header">
+            <div class="top-header">
+                <div class="logo">
+                    <h1>Esme Sweet Cake</h1>
+                </div>
+            </div>    
+        </header>
+        <main class="main">
+            <pre>
+                <h1>Reserve sua mesa aqui:</h1>
+                <form action="https://api.sheetmonkey.io/form/qpsJYFRqfHwBSZEzkxTA5a" method="post">
+                    <label id="nome" for="nome">Nome:</label>
+                    <input type="text" name="Nome" placeholder="Insira seu Nome" required >
+                    <br>
+                    <label id="qtdPessoa" for="qtdPessoa">Quantidade de pessoas:</label>
+                    <input type="number" name="qtdPessoa" placeholder="Insira a Quantidade" required >
+                    <br>
+                    <label id="Data" for="Data">Data:</label>
+                    <input type="date" name="Data" placeholder="Insira a Data" required >
+                    <br>
+                    <label id="Horario" for="Horario">Horário:</label>
+                    <input type="time" name="Horario" placeholder="Insira o Horário" required >
+                    <br>
+                    <label id="Area" for="Area">Área do Estabelecimento:</label>
+                    <input type="radio" name="Area" value="Interno" checked >Interno
+                    <input type="radio" name="Area" value="Externo" >Externo 
+                    <input type="radio" name="Area" value="Externo Coberto" >Externo Coberto
+                    <br>
+                    <button type="submit" class="btn2"><p class="txtB">Enviar</p></button>
+                </form>
+             <div class="button-container">
+                 
+                <button type="button" class="btn"><p><a href="./login.html"><img src="../assets/img/voltar.png" alt="voltar" class="btn-img"/></a></p></button>
+
+                <button type="button" class="btn"><p><a href="../index.html"><img src="../assets/img/home.png" alt="home" class="btn-img"/></a></p></button>
+             </div>
+             
+            <!--<center><p style="color: black;">Desenvolvido por InovaDevs</p>                   </center>-->
+            </pre>
+        </main>
+         <footer class="footer">Desenvolvido por InovaDevs</footer>
+    </body>
+</html>
