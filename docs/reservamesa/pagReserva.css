@@ -164,9 +164,6 @@ body {
         font-size: 1em;
     }
 
-    .footer {
-        font-size: 0.8em;
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -206,7 +203,4 @@ body {
         font-size: 0.9em;
     }
 
-    .footer {
-        font-size: 0.7em;
-    }
 }
