@@ -121,7 +121,7 @@ body {
 }
 
 /* Media queries para telas menores */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     .header .logo h1 {
         font-size: 1em;
     }
