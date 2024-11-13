@@ -1,31 +1,7 @@
-/* Estilos gerais */
-body {
-    font-family: "Georgia", serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-}
-
-/* Estilo do header */
-.header {
-    background-color: #ff7d7d;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.header .logo h1 {
-    margin: 0;
-    font-size: 0.8em;
-}
-
 /* Estilo do main */
 .main {
     max-width: 600px;
-    max-height: 650px;
+    max-height: 750px;
     margin: 0 auto;
     padding: 10px 60px 100px;
     background-color: #edf0f0;
@@ -61,11 +37,16 @@ body {
  .main input[type="text"],
     .main input[type="number"],
     .main input[type="date"],
-    .main input[type="time"] {
+    .main input[type="time"]{
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 6px;
     width: 90%;
+}
+
+.main input[type="radio"]{
+    margin-left: 15vh;
+    margin-top: 5px;
 }
 
 /* Estilo dos botões */
@@ -115,12 +96,12 @@ body {
     background-color: #ff7d7d;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     font-size: 0.7em;
-    margin-top: 30px;
+    margin-top: 15vh;
 }
 
-/* Media queries para telas menores */
+
 @media screen and (max-width: 1200px) {
     .header .logo h1 {
         font-size: 1em;
@@ -183,7 +164,7 @@ body {
         font-size: 0.7rem;
     }
 
-     .main input[type="text"],
+    .main input[type="text"],
     .main input[type="number"],
     .main input[type="date"],
     .main input[type="time"] {
