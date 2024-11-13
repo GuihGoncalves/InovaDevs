@@ -1,3 +1,27 @@
+/* Estilos gerais */
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+/* Estilo do header */
+.header {
+    background-color: #ff7d7d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 0.8em;
+}
+
 /* Estilo do main */
 .main {
     max-width: 600px;
