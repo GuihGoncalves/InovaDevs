@@ -9,8 +9,8 @@ O projeto se concentra em um site para confeitaria que visa criar uma plataforma
 
 ## 🛠️ Construído com
 
-![image](https://github.com/user-attachments/assets/63e52500-3204-48c3-8a56-50b8e5ff20af)
-![image](https://github.com/user-attachments/assets/12405686-c95d-4ba6-90ff-ef152a9432ae)
+<img src="https://github.com/user-attachments/assets/63e52500-3204-48c3-8a56-50b8e5ff20af" alt="HTML5" width="100" height="100" style="display: inline-block; margin-right: 10px;"> 
+<img src="https://github.com/user-attachments/assets/12405686-c95d-4ba6-90ff-ef152a9432ae" alt="CSS3" width="100" height="100" style="display: inline-block;">
 
 ## ✒️ Autores
 
