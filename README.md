@@ -22,7 +22,7 @@ O projeto se concentra em um site para confeitaria que visa criar uma plataforma
 
 ## 🎨 Design do Projeto
 
-<div style="text-align: center; margin-bottom: 20px;"> <img src="https://github.com/user-attachments/assets/d188d329-720c-462c-ad09-bd288f6df39d" alt="Logo" width="300" style="display: inline-block;"> </div> 
+<img src="https://github.com/user-attachments/assets/d188d329-720c-462c-ad09-bd288f6df39d" alt="Logo" width="300" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;"> 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;"> 
 <img src="https://github.com/user-attachments/assets/addd84ef-cfa9-458a-b0c9-682edf3d878f" alt="TELA INICIAL WEB" width="48%" style="display: inline-block;"> 
 <img src="https://github.com/user-attachments/assets/3503b818-3120-49a3-8662-e84aee489676" alt="TELA LOGIN" width="48%" style="display: inline-block;"> </div> 
