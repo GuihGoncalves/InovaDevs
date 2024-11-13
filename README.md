@@ -1,4 +1,4 @@
-# Esme Sweet Cake
+# Esme Sweet Cake - Front-end
 
 ## 🚀 Começando
 
@@ -9,7 +9,8 @@ O projeto se concentra em um site para confeitaria que visa criar uma plataforma
 
 ## 🛠️ Construído com
 
-(No final, adicionaremos todas as ferramentas que utilizamos para o desenvolvimento.)
+![image](https://github.com/user-attachments/assets/63e52500-3204-48c3-8a56-50b8e5ff20af)
+![image](https://github.com/user-attachments/assets/12405686-c95d-4ba6-90ff-ef152a9432ae)
 
 ## ✒️ Autores
 
