@@ -1,4 +1,4 @@
-# Esme Sweet Cake - Front-end
+# Esme Sweet Cake ➔ Front-end
 
 ## 🚀 Começando
 
