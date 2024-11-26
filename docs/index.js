@@ -26,6 +26,24 @@ async function fetchProducts() {
     } catch (error) {
         console.error('Erro ao buscar produtos:', error);
     }
+
+    // Seleciona o botão
+    const backToTopButton = document.getElementById('back-to-top');
+
+    // Mostra o botão apenas após rolar para baixo
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            backToTopButton.style.display = 'block'; // Exibe o botão
+        } else {
+            backToTopButton.style.display = 'none'; // Oculta o botão
+        }
+    });
+
+    // Rola para o topo ao clicar no botão
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Animação suave ao rolar
+    });
+
 }
 
 window.onload = fetchProducts;

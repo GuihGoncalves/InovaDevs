@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
-        <link rel="shortcut icon" href="./imagens/Logo.jpeg" type="image/x-icon">
+        <link rel="shortcut icon" alt="EsmeSweetCake Logo" href="./imagens/Logo.jpeg" type="image/x-icon">
         <title>Esme Sweet Cake</title>
     </head>
     <body>
@@ -18,7 +18,7 @@
                 <div class="top-header-inside">
                     <div class="profile">
                         <a href="./login/login.html">
-                            <img class="perfilImg" src="./assets/img/person.png">
+                            <img class="perfilImg" alt="Perfil" src="./assets/img/person.png">
                         </a>
                     </div>
                 </div>
@@ -26,11 +26,11 @@
         </header>
         <nav>
             <ul class="menu-desktop">
-                <a href="#home" class="btn btn-dark">HOME</a>
-                <a href="#produtos" class="btn btn-dark">PRODUTOS</a>
-                <a href="#reservas" class="btn btn-dark">RESERVAS</a>
-                <a href="#faq" class="btn btn-dark">FAQ</a>
-                <a href="#sobre" class="btn btn-dark">SOBRE</a>
+                <li><a href="#home" class="btn btn-dark">HOME</a></li>
+                <li><a href="#produtos" class="btn btn-dark">PRODUTOS</a></li>
+                <li><a href="#reservas" class="btn btn-dark">RESERVAS</a></li>
+                <li><a href="#faq" class="btn btn-dark">FAQ</a></li>
+                <li><a href="#sobre" class="btn btn-dark">SOBRE</a></li>
             </ul>
         </nav>
         <main>
@@ -43,10 +43,11 @@
             <!-- Produtos -->
             <h1 class="h2-abas" id="prod">Produtos</h1>
             <div class="adicionarProduto">
-                <a href="./adicionarProdutos/adicionarProd.html">
-                    <button type="button" class="btn btn-addprod">Adicionar Produtos</button>
-                </a>
+              <button type="button" class="btn btn-addprod" onclick="window.location.href='./adicionarProdutos/adicionarProd.html'">
+                  Adicionar Produtos
+              </button>
             </div>
+          
             <section id="produtos" class="produtos">
                 <div id="products-container" class="row row-cols-1 row-cols-md-3 g-4">
                     <!-- Os produtos serão carregados dinamicamente aqui -->
@@ -95,6 +96,8 @@
                 <p>Estamos entusiasmados com o caminho que este projeto está tomando e gratos por poder homenagear seu trabalho incrível. Agradecemos por fazer parte dessa jornada conosco.</p>
             </section>
         </main>
+        <button id="back-to-top" class="back-to_top">↑</button>
+
         <footer class="footer">Desenvolvido por InovaDevs</footer>
         <script src="./index.js"></script>
     </body>

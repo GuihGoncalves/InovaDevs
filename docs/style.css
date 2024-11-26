@@ -97,6 +97,7 @@ nav {
 }
 
 .menu-desktop {
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,6 +288,21 @@ nav {
     background-color: var(--primary-color);
     color: var(--button-text-color);
 }
+#back-to-top {
+    position: fixed; /* Fixa o botão na posição desejada */
+    bottom: 20px;    /* Distância do botão em relação ao rodapé */
+    right: 20px;     /* Distância do botão em relação à borda direita */
+    display: none;   /* Inicialmente, o botão estará oculto */
+    z-index: 1000;   /* Garante que o botão fique acima de outros elementos */
+    padding: 10px 15px; /* Ajusta o tamanho do botão */
+    font-size: 16px; /* Define o tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+}
+
+#back-to-top:hover {
+    background-color: #444; /* Cor de fundo ao passar o mouse */
+}
 
 /* Media queries para telas maiores */
 @media (min-width: 768px) {
@@ -348,6 +364,7 @@ nav {
     }
 
     .menu-desktop .btn {
+        list-style: none;
         flex: 0 1 auto; /* Volta ao tamanho automático para telas maiores */
         padding: 10px 20px;
         font-size: 1rem;
