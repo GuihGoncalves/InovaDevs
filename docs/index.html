@@ -44,14 +44,20 @@
                     <h3>15% OFF</h3>
                 </div>
             </section>
-
             <!-- Produtos -->
             <h1 class="h2-abas" id="prod">Produtos</h1>
             <div class="adicionarProduto">
               <a href="./adicionarProdutos/adicionarProd.html">
-              <button type="button" class="btn btn-addprod">Adicionar Produtos</button>
+                <button type="button" class="btn btn-addprod">Adicionar Produtos</button>
               </a>
+            </div>
+            <section id="produtos" class="produtos">
+              <div id="products-container" class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Os produtos serão carregados dinamicamente aqui -->
               </div>
+            </section>
+          </section>
+          <!--
             <section id="produtos" class="produtos">
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
@@ -92,7 +98,7 @@
                 </div>
               </div>
             </div>
-         </section>
+         </section-->
 
             <!-- Reservas -->
             <h1 class="h2-abas">Reservas</h1>
@@ -145,6 +151,40 @@
         </main>
         <footer class="footer">Desenvolvido por InovaDevs</footer>
     </body>
+    <script>
+      const apiUrl = 'https://inovadevsapi.onrender.com/service/productService/readProduct.php';
+  
+      async function fetchProducts() {
+          try {
+              const response = await fetch(apiUrl);
+              const products = await response.json();
+  
+              const container = document.getElementById('products-container');
+              container.innerHTML = ''; 
+  
+              products.forEach(product => {
+                  const productCard = `
+                      <div class="col">
+                          <div class="card">
+                              <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                              <div class="card-body">
+                                  <h5 class="card-title">${product.name}</h5>
+                                  <p class="card-text">${product.description}</p>
+                                  <p class="card-price">R$ ${parseFloat(product.price).toFixed(2)}</p>
+                              </div>
+                          </div>
+                      </div>
+                  `;
+                  container.innerHTML += productCard;
+              });
+          } catch (error) {
+              console.error('Erro ao buscar produtos:', error);
+          }
+      }
+  
+      window.onload = fetchProducts;
+  </script>
+  
     <!--        NOMES E RA's DO GRUPO
         Guilherme da Silva Gonçalves - 202202140465
         Giovanna Graço Soprano - 202403015951
