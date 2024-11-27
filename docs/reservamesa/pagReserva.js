@@ -66,6 +66,7 @@ async function fetchReservations() {
         reservations.forEach(reservation => {
             const row = document.createElement('tr');
             row.innerHTML = `
+                <td>${reservation.reservation_id}</td>
                 <td>${reservation.name}</td>
                 <td>${reservation.people_qtt}</td>
                 <td>${reservation.reservation_date}</td>
@@ -76,5 +77,36 @@ async function fetchReservations() {
         });
     } catch (error) {
         console.error('Erro ao buscar reservas:', error);
+    }
+}
+document.getElementById('delete').addEventListener('click', function () {
+    const reservationId = prompt('Digite o ID da reserva que deseja deletar:');
+    
+    if (reservationId) {
+        deleteReservation(reservationId);
+    } else {
+        showNotification('ID inválido ou cancelado.', 'error');
+    }
+});
+
+
+// Função para deletar uma reserva por ID
+async function deleteReservation(id) {
+    try {
+        const response = await fetch(`https://inovadevsapi.onrender.com/service/reservationService/deleteReservation.php?reservationId=${id}`, {
+            method: 'DELETE',
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            showNotification(result.message, 'success');
+            fetchReservations(); // Atualiza a lista de reservas
+        } else {
+            showNotification(result.message || 'Erro ao excluir reserva.', 'error');
+        }
+    } catch (error) {
+        showNotification('Erro de conexão com o servidor.', 'error');
+        console.error('Erro ao excluir reserva:', error);
     }
 }

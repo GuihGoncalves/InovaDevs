@@ -8,95 +8,207 @@
         <title>Esme Sweet Cake</title>
     </head>
     <body>
-        <!-- principal -->
+      <dialog id="modal">
+        <p>Produto adicionado com sucesso! Em breve, ele será avaliado para ser disponibilizado em nossa loja. Agradecemos pela sua contribuição!</p>
+      </dialog>
+        <!-- principal-->
         <header id="home" class="header">
             <div class="top-header">
-                <img class="logoImg" alt="Imagem do Perfil" src="./assets/img/Logo.jpeg">
+                <img class="logoImg" src="./assets/img/Logo.jpeg">
                 <div class="logo">
                     <h1>Esme Sweet Cake</h1>
                 </div>
                 <div class="top-header-inside">
-                    <div class="profile">
+                    <div class="search"></div>
+                        <input type="text" placeholder="Pesquisar..." maxlength="30">
+                        <button>&#128269;</button>
+                    </div>
+                    <div>
+                      <img class="carrinho-img" id="img-carrinho" src="./imagens/carrinho.png" alt="Carrinho de Compras">
+                    </div>
+                    <div class="profile">    
                         <a href="./login/login.html">
-                            <img class="perfilImg" alt="Perfil" src="./assets/img/person.png">
+                            <img class="perfilImg" src="./assets/img/person.png">
                         </a>
                     </div>
                 </div>
-            </div>
-        </header>
+            </div>    
+        </header> 
+
+        <!-- Carrinho de Compras -->
+        <div id="carrinho" class="carrinho">
+          <h2 class="titulo">Carrinho</h2>
+            <div class="produtos">
+           <!-- <p>Seu carrinho está vazio</p> -->
+            <ul>
+              
+            </ul>
+          </div>
+        </div>
+
         <nav>
             <ul class="menu-desktop">
-                <li><a href="#home" class="btn btn-dark">HOME</a></li>
-                <li><a href="#produtos" class="btn btn-dark">PRODUTOS</a></li>
-                <li><a href="#reservas" class="btn btn-dark">RESERVAS</a></li>
-                <li><a href="#faq" class="btn btn-dark">FAQ</a></li>
-                <li><a href="#sobre" class="btn btn-dark">SOBRE</a></li>
+                <a href="#home" class="btn btn-dark">HOME</a>
+                <a href="#produtos" class="btn btn-dark">PRODUTOS</a>
+                <a href="#reservas" class="btn btn-dark">RESERVAS</a>
+                <a href="#faq" class="btn btn-dark">FAQ</a>
+                <a href="#sobre" class="btn btn-dark">SOBRE</a>
             </ul>
         </nav>
         <main>
-            <section class="promo">
+            <section class="promo">       
                 <h2>DESCONTO NA SUA PRIMEIRA RESERVA</h2>
                 <div class="promo-text">
                     <h3>15% OFF</h3>
                 </div>
             </section>
-          
+
+            <!-- Produtos -->
+            <h1 class="h2-abas" id="prod">Produtos</h1>
+            <div class="adicionarProduto">
+              <a href="./adicionarProdutos/adicionarProd.html">
+              <button type="button" class="btn btn-addprod">Adicionar Produtos</button>
+              </a>
+              </div>
             <section id="produtos" class="produtos">
-                <!-- Produtos -->
-                <h1 class="h2-abas" id="prod">Produtos</h1>
-                <div class="adicionarProduto">
-                  <button type="button" class="btn btn-addprod" onclick="window.location.href='./adicionarProdutos/adicionarProd.html'">
-                      Adicionar Produtos
-                  </button>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card" id="produto1">
+                  <img src="./imagens/bolo1.jpeg" class="card-img-top" alt="001">
+                  <div class="card-body">
+                    <h5 id="titulo1" class="card-title">Bolo Decorado</h5>
+                    <p class="card-text">Fazemos bolos do sabor e decoração de sua preferência. Levamos elegância e suavidade para suas celebrações!</p>
+                    <div>
+                      <span id="preco1" class="preco">R$80.00</span>
+                    </div>
+                    
+                    <div>
+                      <img id="quantidade-menos1" class="menos" src="./imagens/menos.png">
+                      <span id="quantidade1" class="quantidade">1</span>
+                      <img id="quantidade-mais1" class="mais" src="./imagens/mais.png">
+                    </div>
+                     <button id="adicionar-carrinho1" class="botaoAddCarrinho">Adicionar ao Carrinho</button>
+                  </div>
                 </div>
-                <div id="products-container" class="row row-cols-1 row-cols-md-3 g-4">
-                    <!-- Os produtos serão carregados dinamicamente aqui -->
+              </div>
+              <div class="col">
+                <div class="card" id="produto2">
+                  <img src="./imagens/bolo2.jpeg" class="card-img-top" alt="002">
+                  <div class="card-body">
+                    <h5 id="titulo2" class="card-title">Bolo Vulcão</h5>
+                    <p class="card-text">Massa macia e recheio cremoso que transborda em cada fatia. Uma explosão de sabor irresistível! Os sabores são de sua escolha.             
+                    </p>
+                    <div>
+                      <span id="preco2" class="preco">R$50.00</span>
+                    </div>
+                    
+                    <div>
+                      <img id="quantidade-menos2" class="menos" src="./imagens/menos.png">
+                      <span id="quantidade2" class="quantidade">1</span>
+                      <img id="quantidade-mais2" class="mais" src="./imagens/mais.png">
+                    </div>
+                    <button id="adicionar-carrinho2" class="botaoAddCarrinho">Adicionar ao Carrinho</button>
+                  </div>
                 </div>
-            </section>
+              </div>
+              <div class="col" id="produto3">
+                <div class="card">
+                  <img src="./imagens/bolo3.jpeg" class="card-img-top" alt="003">
+                  <div class="card-body">
+                    <h5 id="titulo3" class="card-title">Bolo de Ganache</h5>
+                    <p class="card-text">Massa branca coberta com ganache de leite condensado e decorada com frutas frescas. Uma combinação perfeita!</p>
+                    <div>
+                      <span id="preco3" class="preco">R$60.00</span>
+                    </div>
+                    
+                    <div>
+                      <img id="quantidade-menos3" class="menos" src="./imagens/menos.png">
+                      <span id="quantidade3" class="quantidade">1</span>
+                      <img id="quantidade-mais3" class="mais" src="./imagens/mais.png">
+                    </div>
+                    <button id="adicionar-carrinho3" class="botaoAddCarrinho">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" id="produto4">
+                  <img src="./imagens/bolo4.jpeg" class="card-img-top" alt="004">
+                  <div class="card-body">
+                    <h5 id="titulo4" class="card-title">Bolo de Frutas</h5>
+                    <p class="card-text">Massa leve com recheio de frutas da sua preferência e cobertura de chantilly. Um equilíbrio delicioso entre doce e ácido!</p>
+                    <div>
+                      <span id="preco4" class="preco">R$70.00</span>
+                    </div>
+                    
+                    <div>
+                    <img id="quantidade-menos4" class="menos" src="./imagens/menos.png">
+                    <span id="quantidade4" class="quantidade">1</span>
+                    <img id="quantidade-mais4" class="mais" src="./imagens/mais.png">
+                  </div>
+                  <button id="adicionar-carrinho4" class="botaoAddCarrinho">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </section>
+
             <!-- Reservas -->
-            <h1 id="reservas" class="h2-abas">Reservas</h1>
-            <section class="reservas">
+            <h1 class="h2-abas">Reservas</h1>
+            <section id="reservas" class="reservas">
                 <div class="textoReserva">
                     <small>Faça a sua</small>
                     <h1>Reserva</h1>
                     <p>Realizando a reserva online você <br>garante seu lugar com segurança!</p>
                 </div>
-                <button type="button" onclick="window.location.href='./reservamesa/pagReserva.html'">
-                  Clique aqui!
-                </button>
+                <a href="reservamesa/pagReserva.html">
+                    <button>
+                    Clique aqui!
+                    </button>
+                </a>
             </section>
+            
             <!-- FAQ -->
-            <h1 id="faq" class="h2-abas">FAQ</h1>
-            <section id="faq1" class="faq">
-                <h3>Quais formas de pagamento são aceitas?</h3>
-                <p>Aceitamos cartões de crédito, débito e pagamentos em dinheiro.</p>
-            </section>
-            <section id="faq2" class="faq">
-                <h3>Como funciona a reserva?</h3>
-                <p>Você preenche o formulário com a data e o horário da sua visita para que possamos reservar uma mesa e atendê-lo(a) da melhor forma possível.</p>
-            </section>
-            <section id="faq3" class="faq">
-                <h3>Vocês fazem bolos para dietas específicas, como sem açúcar?</h3>
-                <p>Sim, temos opções para dietas específicas, incluindo bolos sem açúcar. Entre em contato para mais informações.</p>
-            </section>
-            <section id="faq4" class="faq">
-                <h3>Vocês fazem bolos personalizados?</h3>
-                <p>Sim, oferecemos bolos personalizados para todas as ocasiões. Entre em contato conosco com suas ideias e faremos o possível para realizá-las.</p>
-            </section>
-            <section id="faq5" class="faq">
-                <h3>Quais são os horários de funcionamento da loja?</h3>
-                <p>Estamos abertos de segunda a sábado, das 9h às 18h. Fechamos aos domingos.</p>
-            </section>
+            <h1 class="h2-abas">FAQ</h1>
+                <section id="faq" class="faq">
+                    <h3>Quais formas de pagamento são aceitas?</h3>
+                    <p>Aceitamos cartões de crédito, débito e pagamentos em dinheiro.</p>
+                </section>
+                
+                 <section id="faq" class="faq">
+                    <h3>Como funciona a reserva?</h3>
+                    <p>Você preenche o formulário com a data e o horário da sua visita para que possamos reservar uma mesa e atendê-lo(a) da melhor forma possível.</p>
+                </section>
+    
+                <section id="faq" class="faq">
+                    <h3>Vocês fazem bolos para dietas específicas, como sem açúcar?</h3>
+                    <p>Sim, temos opções para dietas específicas, incluindo bolos sem açúcar. Entre em contato para mais informações.</p>
+                </section>
+    
+                <section id="faq" class="faq">
+                    <h3>Vocês fazem bolos personalizados?</h3>
+                    <p>Sim, oferecemos bolos personalizados para todas as ocasiões. Entre em contato conosco com suas ideias e faremos o possível para realizá-las.</p>
+                </section>
+    
+                <section id="faq" class="faq">
+                    <h3>Quais são os horários de funcionamento da loja?</h3>
+                    <p>Estamos abertos de segunda a sábado, das 9h às 18h. Fechamos aos domingos.</p>
+                </section>
+
             <!-- Sobre -->
-            <h2 id="sobre" class="h2-abas">Sobre Nós</h2>
-            <section class="sobre">
+            <h2 class="h2-abas">Sobre Nós</h2>
+            <section id="sobre" class="sobre">
                 <p>Bem-vindo ao nosso site! Este projeto de desenvolvimento web nasceu da paixão e talento da mãe confeiteira de um dos integrantes do nosso grupo. Sua dedicação e habilidade na confeitaria nos inspiraram a criar este site, com o objetivo de compartilhar suas delícias com todos.</p>
                 <p>Estamos entusiasmados com o caminho que este projeto está tomando e gratos por poder homenagear seu trabalho incrível. Agradecemos por fazer parte dessa jornada conosco.</p>
             </section>
         </main>
-        <button id="back-to-top" class="back-to_top">↑</button>
-
         <footer class="footer">Desenvolvido por InovaDevs</footer>
-        <script src="./index.js"></script>
-    </body>
+        <script src="index.js"> </script>
+      </body>
+    <!--        NOMES E RA's DO GRUPO
+        Guilherme da Silva Gonçalves - 202202140465
+        Giovanna Graço Soprano - 202403015951
+        Leandro Schiavo de Oliveira - 202402531271
+        Otávio de Oliveira - 202212039589
+        Matheus dos Santos - 202403829533
+    -->
 </html>
